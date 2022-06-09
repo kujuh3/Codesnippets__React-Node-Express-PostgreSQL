@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL.git"
+    "url": "git+https://github.com/kujuh3/Codesnippets__React-Node-Express-PostgreSQL.git"
   },
   "engines": {
     "node" : "16.15.0"
@@ -18,7 +18,7 @@
   "author": "kujala",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL/issues"
+    "url": "https://github.com/kujuh3/Codesnippets__React-Node-Express-PostgreSQL.git/issues"
   },
-  "homepage": "https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL#readme"
+  "homepage": "https://github.com/kujuh3/Codesnippets__React-Node-Express-PostgreSQL.git#readme"
 }
