@@ -70,9 +70,10 @@ const addNewSnippet = (req, res) => {
 }
 }
 
-const deleteCustomer = (req, res) => {
+/* THESE ARENT BEING USED, NEITHER TESTED - JUST BOILERPLATE CODED */
+const deleteSnippet = (req, res) => {
     const query = {
-        text: 'DELETE FROM customers WHERE id = $1',
+        text: 'DELETE FROM snippets WHERE id = $1',
         values: [req.params.id],
       }
     
@@ -85,13 +86,13 @@ const deleteCustomer = (req, res) => {
       res.status(204).end();
 }
 
-const updateCustomer = (req, res) => {
+const updateSnippet = (req, res) => {
 
-    const editedCustomer = req.body;
-
+    const editedSnippet = req.body;
+    
+    newSnippet.name, codeVal, newSnippet.description, extension, newSnippet.category_id
     const query = {
-      text: 'UPDATE customers SET firstname=$1, lastname=$2, email=$3, phone=$4 WHERE id = $5',
-      values: [editedCustomer.firstname, editedCustomer.lastname, editedCustomer.email, editedCustomer.phone, req.params.id],
+      values: [editedSnippet.name, editedSnippet.code, editedSnippet.description, editedSnippet.category_id, req.params.id],
     }
   
     db.query(query, (err, res) => {
@@ -100,12 +101,12 @@ const updateCustomer = (req, res) => {
       }
     })
   
-    res.json(editedCustomer);
+    res.json(editedSnippet);
 }
 
 module.exports = {
     getAllSnippets: getAllSnippets,
     addNewSnippet: addNewSnippet,
-    deleteCustomer: deleteCustomer,
-    updateCustomer: updateCustomer,
+    deleteSnippet: deleteSnippet,
+    updateSnippet: updateSnippet,
   }
