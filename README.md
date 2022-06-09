@@ -1,5 +1,5 @@
 ## A web-app for uploading code snippets and searching them.
-
+<a href="https://quicksnippets.herokuapp.com/" target="blank">Preview</a>
 ![kuva](https://user-images.githubusercontent.com/66220187/172847079-407bbdf5-ea09-4519-8865-beeaf24656a2.png)
 
 ## Local usage
