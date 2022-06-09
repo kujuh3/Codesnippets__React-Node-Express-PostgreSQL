@@ -17,12 +17,14 @@ app.use(fileUpload({
   createParentPath: true
 }));
 
-/* HEROKU BUILD INITIALS
+/* HEROKU BUILD INITIALS - UNCOMMENT THESE WHEN DEPLOYING
+
+This will ping the heroku app every 5 minutes, so that it doesnt go idle
 setInterval(function() {
-  http.get("http://quicksnippets.herokuapp.com/");
+  http.get("http://YOUR HEROKU APP URL HERE.herokuapp.com/");
 }, 300000); // every 5 minutes (300000)
 
-
+On build the react frontend will be served from here by the server
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 */
 app.use(cors());
