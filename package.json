@@ -1,0 +1,24 @@
+{
+  "name": "codesnippets",
+  "version": "1.0.1",
+  "description": "A fullstack app for searching code snippets and uploading them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js && cd ../client && npm start",
+    "build": "cd client && npm install --force && npm run build  && cd ../server && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL.git"
+  },
+  "engines": {
+    "node" : "16.15.0"
+  },
+  "author": "kujala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL/issues"
+  },
+  "homepage": "https://github.com/kujuh3/Codesnippets_React-Node-Express-PostgreSQL#readme"
+}
