@@ -19,6 +19,6 @@
 ## Deployment to heroku
 
 #### - Change database credentials in /server/db/dbconfig.js
-#### - Create hero PSQL and dump latest.dump file to initiate SQL tables
+#### - Create heroku PSQL and dump latest.dump file to initiate SQL tables
 #### - Uncomment heroku initiation blocks from /server/index.js
 #### - Deploy app to heroku
